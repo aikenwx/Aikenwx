@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 10,
+    "markdown.preview.fontSize": 10,
+    "debug.console.fontSize": 10,
+    "scm.inputFontSize": 10,
+    "screencastMode.fontSize": 56,
+    "editor.fontWeight": "normal",
+    "window.zoomLevel": 0,
+    "cSpell.words": [
+        "stylo"
+    ]
+
+    
+}
