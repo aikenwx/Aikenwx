@@ -1,41 +1,20 @@
 
-.landing-hero {
-    height: 700px;
-}
-
-
 .logo {
     font-size: 10vw;
 }
 
 
-.welcome {
-    font-size: 3vw;
-}
-
 @media screen and (max-width: 640px) {
-
-    .landing-hero {
-        height: calc(100vh - 3.5rem);
-    }
-
     .logo {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
-    .welcome {
-        font-size: 1rem;
-    }
 }
 
 
 @media screen and (min-width: 1025px) {
     .logo {
         font-size: 6.5rem;
-    }
-
-    .welcome {
-        font-size: 2rem;
     }
 }
  

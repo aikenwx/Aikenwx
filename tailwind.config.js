@@ -10,6 +10,9 @@ module.exports = {
             fontFamily: {
                 beon: ["var(--font-beon)"],
             },
+            height: {
+                panel: "700px",
+            },
         },
     },
     plugins: [],

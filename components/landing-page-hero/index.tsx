@@ -5,15 +5,15 @@ import styloMilo from "../../public/images/stylo-milo.jpg";
 
 export default function LandingPageHero() {
     return (
-        <div className={` dark:bg-gray-800 bg-slate-100 flex w-screen`}>
+        <div className={` dark:bg-gray-800 bg-slate-100 flex w-screen pt-14 `}>
             <div
                 className={` flex flex-wrap basis-full xl:container xl:mx-auto`}
             >
                 <div
-                    className={`flex basis-full sm:basis-2/3 flex-wrap lg:justify-end justify-center h-full ${styles["landing-hero"]}`}
+                    className={`flex basis-full sm:basis-2/3 flex-wrap lg:justify-end justify-center sm:h-120 h-screen sm:h-panel }`}
                 >
                     <div className="flex items-center flex-wrap text-center">
-                        <div className="flex justify-center items-center flex-col p-10">
+                        <div className="flex justify-center items-center flex-col sm:p-10 p-5">
                             <div className={`font-light mr-2 text-2xl `}>
                                 Hi, I am a
                             </div>

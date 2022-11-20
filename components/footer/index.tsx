@@ -13,13 +13,13 @@ export default function Footer() {
                                 href="mailto: aikenwongx@u.nus.edu"
                                 type="email"
                             >
-                                Email me
+                                Email Me
                             </Link>
                         </span>
 
                         <span className="basis-full">
                             <Link href="https://t.me/Aiken55" target="_blank">
-                                Telegram me
+                                Telegram Me
                             </Link>
                         </span>
                     </div>
