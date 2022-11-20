@@ -47,7 +47,7 @@ export default function LandingPageHero() {
                 <div className="flex basis-full sm:basis-1/3 items-start justify-center max-h-full">
                     <Image
                         className="max-w-full h-full object-cover md:w-full aspect-square"
-                        // priority={true}
+                        // priority={true} // priority is not good for mobile, @todo maybe make image size smaller
                         alt="Aiken"
                         src={styloMilo}
                     ></Image>
