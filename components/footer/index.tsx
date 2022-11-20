@@ -40,7 +40,8 @@ export default function Footer() {
                 <div className="p-10">
                     <hr></hr>
                     <br></br>
-                    {/* copyright */}© {Date.now()} Aiken Wong Xiheng
+                    {/* copyright */}©{new Date().getFullYear()} Aiken Wong
+                    Xiheng
                 </div>
             </div>
         </div>
