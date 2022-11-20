@@ -6,10 +6,10 @@ export default function MyMotto() {
             <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center">
                 <div className="flex p-10 sm-p-5 pt-20 basis-full">
                     <div>
-                        <div className="font-beon text-5xl sm:text-6xl mb-10">
+                        <div className="text-5xl font-medium sm:text-6xl mb-10">
                             About me
                         </div>
-                        <p className="max-w-3xl text-xl ">
+                        <p className="max-w-3xl text-xl">
                             {`I am a software engineer who is passionate about
                             learning new technology and improving my craft.
                             There's always a more elegant solution and new
@@ -23,12 +23,12 @@ export default function MyMotto() {
                 </div>
                 <div className="flex p-10 sm-p-5 pb-20 basis-full sm:justify-end ">
                     <div>
-                        <div className="font-beon text-5xl sm:text-6xl mb-10">
+                        <div className="text-5xl font-medium sm:text-6xl mb-10">
                             My skills
                         </div>
                         <p className="max-w-3xl text-xl">
                             {`When I'm building software, I like to experiment and equip myself with the best 
-                         resources for the job. As such I have explored technologies such as: React, Next.js, Express, Django, MySQL, GraphQL, TypeScript, Docker, AWS, and many more.
+                         resources for the job. I have explored technologies such as: React, Next.js, Express, Django, MySQL, GraphQL, TypeScript, Docker, AWS, and many more.
                          However, I am always open to learning new things and ready for the opportunity to grow and improve.
    `}
                         </p>
