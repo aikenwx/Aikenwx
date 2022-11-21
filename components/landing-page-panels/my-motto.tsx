@@ -7,7 +7,7 @@ export default function MyMotto() {
                 <div className="flex p-10 sm-p-5 pt-20 basis-full">
                     <div>
                         <div className="text-5xl font-medium sm:text-6xl mb-10">
-                            About me
+                            About Me
                         </div>
                         <p className="max-w-3xl text-xl">
                             {`I am a software engineer who is passionate about
@@ -24,7 +24,7 @@ export default function MyMotto() {
                 <div className="flex p-10 sm-p-5 pb-20 basis-full sm:justify-end ">
                     <div>
                         <div className="text-5xl font-medium sm:text-6xl mb-10">
-                            My skills
+                            My Skills
                         </div>
                         <p className="max-w-3xl text-xl">
                             {`When I'm building software, I like to experiment and equip myself with the best 
