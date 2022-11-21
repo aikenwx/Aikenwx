@@ -7,10 +7,6 @@
     "scm.inputFontSize": 10,
     "screencastMode.fontSize": 56,
     "editor.fontWeight": "normal",
-    "window.zoomLevel": 0,
-    "cSpell.words": [
-        "stylo"
-    ]
-
-    
+    "window.zoomLevel": -1,
+    "cSpell.words": ["stylo"]
 }

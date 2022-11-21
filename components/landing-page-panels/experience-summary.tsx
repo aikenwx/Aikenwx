@@ -17,7 +17,7 @@ export default function ExperienceSummary() {
                             is not enough. It may even be the opposite, as
                             software should be written in a manner that is
                             simple, elegant and easily understood by fellow
-                            developers, far from the cryptic intepretation of
+                            developers, far from the cryptic interpretation of
                             the word 'code'. I have since gained an appreciation
                             for the importance of good software design and
                             architecture as well as the value of rigorous
@@ -37,11 +37,11 @@ export default function ExperienceSummary() {
                         <p className="max-w-3xl text-xl">
                             {`
                             However, it was not until my internship at WorkClass
-                            as a full stack developer did I truly see my next
+                            as a full-stack developer did I truly see my next
                             stage of growth as a software engineer. As a
                             fast-paced and growing startup, WorkClass pushed me
                             to adapt and learn quickly. I was challenged to
-                            think on how we use any technology and resources at
+                            think on how we could utilize any technology and resources at
                             our disposal to improve our products and website. I
                             was also able to see the impact of my work
                             optimizing the SEO of our website, which resulted in
