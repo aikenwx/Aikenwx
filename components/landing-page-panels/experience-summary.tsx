@@ -10,7 +10,7 @@ export default function ExperienceSummary() {
                             My Journey So Far
                         </div>
                         <p className="max-w-3xl text-xl">
-                            I am currently studying as a Computer Science
+                            {`I am currently studying as a Computer Science
                             student at the National University of Singapore. If
                             there's one thing I've learnt from my time here as a
                             programmer, it's that simply knowing how to 'code'
@@ -21,20 +21,21 @@ export default function ExperienceSummary() {
                             the word 'code'. I have since gained an appreciation
                             for the importance of good software design and
                             architecture as well as the value of rigorous
-                            software testing.
+                            software testing.`}
                         </p>
                         <br></br>
 
                         <p className="max-w-3xl text-xl">
-                            Within school, I have also had the opportunity to
+                            {`Within school, I have also had the opportunity to
                             involve myself in various software projects and
                             courses. I have worked on web applications, Java
                             applications and even ventured into the process of
                             UI development from usability testing to Figma
-                            prototyping.
+                            prototyping.`}
                         </p>
                         <br></br>
                         <p className="max-w-3xl text-xl">
+                            {`
                             However, it was not until my internship at WorkClass
                             as a full stack developer did I truly see my next
                             stage of growth as a software engineer. As a
@@ -48,7 +49,7 @@ export default function ExperienceSummary() {
                             (We are top 10 for "part-time jobs in Singapore" on
                             Google). I am truly grateful for the opportunity
                             given to me by WorkClass in helping me grow as a
-                            software engineer.
+                            software engineer.`}
                         </p>
                         <p className="max-w-3xl text-xl"></p>
                         <p className="max-w-3xl text-xl">{""}</p>
