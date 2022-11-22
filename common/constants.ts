@@ -7,13 +7,13 @@ export const NAV_MENU_ITEMS: ILinkItem[] = [
         isAbsolutePath: false,
     },
     {
-        value: "My Experience",
-        path: "/my-experience",
+        value: "My Work",
+        path: "/work",
         isAbsolutePath: false,
     },
     {
         value: "My Art",
-        path: "/my-art",
+        path: "/art",
         isAbsolutePath: false,
     },
     {

@@ -1,10 +1,11 @@
 import React from "react";
 import DefaultLayout from "../components/layouts/default-layout";
+import WorkPage from "../components/work-page";
 
 export default function MyExperience() {
     return (
         <DefaultLayout>
-            <div>my-experience</div>
+            <WorkPage />
         </DefaultLayout>
     );
 }
