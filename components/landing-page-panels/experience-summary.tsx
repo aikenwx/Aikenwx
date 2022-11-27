@@ -6,7 +6,7 @@ export default function ExperienceSummary() {
             <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center">
                 <div className="flex p-10 sm-p-5 pt-20 basis-full">
                     <div>
-                        <div className="text-5xl font-medium sm:text-6xl mb-10">
+                        <div className="text-5xl font-light sm:text-6xl mb-10">
                             My Journey So Far
                         </div>
                         <p className="max-w-3xl text-xl">

@@ -6,7 +6,7 @@ export default function MyMotto() {
             <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center">
                 <div className="flex p-10 sm-p-5 pt-20 basis-full">
                     <div>
-                        <div className="text-5xl font-medium sm:text-6xl mb-10">
+                        <div className="text-5xl font-light sm:text-6xl mb-10">
                             About Me
                         </div>
                         <p className="max-w-3xl text-xl">
@@ -23,7 +23,7 @@ export default function MyMotto() {
                 </div>
                 <div className="flex p-10 sm-p-5 pb-20 basis-full sm:justify-end ">
                     <div>
-                        <div className="text-5xl font-medium sm:text-6xl mb-10">
+                        <div className="text-5xl font-light sm:text-6xl mb-10">
                             My Skills
                         </div>
                         <p className="max-w-3xl text-xl">
