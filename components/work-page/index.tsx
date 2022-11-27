@@ -44,9 +44,7 @@ export default function WorkPage({ workPageItems }: IProps) {
             </div>
 
             <div className="xl:container xl:mx-auto h-full grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-10 p-10">
-                {[...workPageItems, ...workPageItems, ...workPageItems].map(
-                    (workPageItem) => card(workPageItem)
-                )}
+                {workPageItems.map((workPageItem) => card(workPageItem))}
             </div>
         </div>
     );
