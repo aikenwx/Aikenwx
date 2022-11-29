@@ -34,7 +34,6 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
      * 3. Finally, we update the currentImageIndex to the next/previous image in the react state
      */
 
-    console.log(currentImageIndex, translateDirection, isTranslating);
     useEffect(() => {
         if (translateDirection > 0) {
             setIsTranslating(true);
@@ -60,8 +59,7 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
     }, [isTranslating]);
 
     return (
-        <div id="default-carousel" className="relative">
-            {currentImageIndex}
+        <div className="relative z-0">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {/* current image */}
                 <div
@@ -77,12 +75,12 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                             : ""
                     }`}
                 >
-                    <img
+                    <Image
                         src={carousel_image_urls[currentImageIndex]}
-                        className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                        // height={100}
-                        // width={100}
-                        // priority={true}
+                        className="absolute block w-full"
+                        fill
+                        style={{ objectFit: "contain" }}
+                        priority={true}
                         alt={imageAlt}
                     />
                 </div>
@@ -93,11 +91,11 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                             isTranslating ? "" : "translate-x-full"
                         }`}
                     >
-                        <img
+                        <Image
                             src={carousel_image_urls[nextSlideIndex]}
-                            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-                            // height={100}
-                            // width={100}
+                            className="absolute block w-full "
+                            fill
+                            style={{ objectFit: "contain" }}
                             alt={imageAlt}
                         />
                     </div>
@@ -109,11 +107,11 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                             isTranslating ? "" : "-translate-x-full"
                         }`}
                     >
-                        <img
+                        <Image
                             src={carousel_image_urls[previousSlideIndex]}
-                            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-                            // height={100}
-                            // width={100}
+                            className="absolute block w-full "
+                            fill
+                            style={{ objectFit: "contain" }}
                             alt={imageAlt}
                         />
                     </div>
@@ -129,6 +127,7 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                 onClick={() => {
                     setTranslateDirection(1);
                 }}
+                disabled={isTranslating}
             >
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <LeftOutlined />
@@ -140,6 +139,7 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                 onClick={() => {
                     setTranslateDirection(2);
                 }}
+                disabled={isTranslating}
             >
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <RightOutlined />

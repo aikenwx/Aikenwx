@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
     };
 
     return (
-        <nav className="bg-white  dark:bg-gray-900 fixed right-0 left-0">
+        <nav className="bg-white  dark:bg-gray-900 fixed right-0 left-0 z-10">
             <div className="flex flex-wrap justify-between items-center mx-auto px-4 py-3">
                 <Link href="/" className="flex items-center">
                     <span className="self-center text-xl whitespace-nowrap dark:text-white">
