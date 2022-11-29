@@ -38,7 +38,7 @@ export default function WorkPage({ workPageItems }: IProps) {
     );
 
     return (
-        <div className=" bg-slate-100 dark:bg-slate-800  pt-14 w-screen">
+        <div className=" bg-slate-100 dark:bg-slate-800  pt-16 w-screen">
             <div className="text-center pt-20 pb-10 text-5xl font-light">
                 Work and Projects
             </div>

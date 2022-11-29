@@ -5,7 +5,7 @@ import styloMilo from "../../public/images/stylo-milo.jpg";
 
 export default function LandingPageHero() {
     return (
-        <div className={` dark:bg-gray-800 bg-slate-100 flex w-screen pt-14 `}>
+        <div className={` dark:bg-gray-800 bg-slate-100 flex w-screen pt-16 `}>
             <div
                 className={` flex flex-wrap basis-full xl:container xl:mx-auto`}
             >
