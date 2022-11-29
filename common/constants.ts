@@ -11,14 +11,14 @@ export const NAV_MENU_ITEMS: ILinkItem[] = [
         path: "/work",
         isAbsolutePath: false,
     },
-    {
-        value: "My Art",
-        path: "/art",
-        isAbsolutePath: false,
-    },
-    {
-        value: "Blogs",
-        path: "/blogs",
-        isAbsolutePath: false,
-    },
+    // {
+    //     value: "My Art",
+    //     path: "/art",
+    //     isAbsolutePath: false,
+    // },
+    // {
+    //     value: "Blogs",
+    //     path: "/blogs",
+    //     isAbsolutePath: false,
+    // },
 ];
