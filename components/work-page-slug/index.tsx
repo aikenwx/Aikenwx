@@ -9,7 +9,10 @@ export default function WorkPageSlugTemplate({ workSlugPageItem }: IProps) {
     return (
         <div className=" bg-slate-100 dark:bg-slate-800  pt-16 w-screen">
             <div className="xl:container xl:mx-auto p-10">
-                <Carousel />
+                <Carousel
+                    carousel_image_urls={workSlugPageItem.carousel_image_urls}
+                    imageAlt={workSlugPageItem.title + " experiences"}
+                />
 
                 <h1 className="pb-2 text-4xl font-light">
                     {workSlugPageItem.title}

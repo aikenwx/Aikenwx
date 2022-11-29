@@ -16,4 +16,5 @@ export interface IWorkSlugPageItem {
     work_role: string;
     paragraphs: string[];
     logo_url: string;
+    carousel_image_urls: string[];
 }
