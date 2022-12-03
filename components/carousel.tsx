@@ -7,6 +7,12 @@ interface IProps {
     imageAlt: string;
 }
 
+/**
+ * This component is a carousel that displays images that prioritize load performance for mobile devices.
+ * Only three images are ever present in the DOM at a time. The current image, the previous image, and the next image.
+ * Browsers like google chrome can also make use of CSS properties like visibility:hidden and display:none to prevent load of
+ * the next and previous images that are not visible in viewport
+ */
 export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [translateDirection, setTranslateDirection] = useState("");
@@ -40,14 +46,28 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
         return () => clearTimeout(timer);
     }, [translateDirection]);
 
-    function showCard(index: number) {
-        return (
-            index == currentImageIndex ||
-            (nextSlideIndex === index &&
-                translateDirection !== "translate-x-full") ||
-            (previousSlideIndex === index &&
-                translateDirection !== "-translate-x-full")
-        );
+    function getClassNamesForSlide(index: number) {
+        const classNames =
+            "duration-700 ease-in-out absolute top-0 left-0 w-full h-full ";
+        if (index === currentImageIndex) {
+            return classNames + translateDirection;
+        } else if (nextSlideIndex === index) {
+            if (translateDirection === "-translate-x-full") {
+                return classNames;
+            } else if (translateDirection === "translate-x-full") {
+                return classNames + "hidden";
+            } else {
+                return classNames + "translate-x-full invisible";
+            }
+        } else if (previousSlideIndex === index) {
+            if (translateDirection === "translate-x-full") {
+                return classNames;
+            } else if (translateDirection === "-translate-x-full") {
+                return classNames + "hidden";
+            } else {
+                return classNames + "-translate-x-full invisible";
+            }
+        }
     }
 
     return (
@@ -56,19 +76,7 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                 {[currentImageIndex, previousSlideIndex, nextSlideIndex].map(
                     (index) => (
                         <div
-                            className={`duration-700 ease-in-out ${
-                                translateDirection !== ""
-                                    ? ""
-                                    : nextSlideIndex === index
-                                    ? "translate-x-full"
-                                    : previousSlideIndex === index
-                                    ? "-translate-x-full"
-                                    : ""
-                            } ${showCard(index) ? "" : "hidden"} ${
-                                index == currentImageIndex
-                                    ? translateDirection
-                                    : ""
-                            } absolute top-0 left-0 w-full h-full`}
+                            className={getClassNamesForSlide(index)}
                             key={index}
                         >
                             <Image
