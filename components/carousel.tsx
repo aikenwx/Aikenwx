@@ -72,7 +72,7 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
 
     return (
         <div id="default-carousel" className="relative z-0">
-            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div className="relative h-56 overflow-hidden md:h-96">
                 {[currentImageIndex, previousSlideIndex, nextSlideIndex].map(
                     (index) => (
                         <div
