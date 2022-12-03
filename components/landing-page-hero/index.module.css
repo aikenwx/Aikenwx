@@ -3,6 +3,25 @@
     font-size: 10vw;
 }
 
+.bg_image{
+    background-image: url('../../public/images/waves_default.svg');
+    width: "100%";
+    height: "100%";
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1921px) {
+    .bg_image{
+        background-image: url('../../public/images/waves_big_screen.svg');
+    }
+}
+
+@media screen and (min-width: 3841px) {
+    .bg_image{
+        background-image: url('../../public/images/waves_massive_screen.svg');
+    }
+}
 
 @media screen and (max-width: 640px) {
     .logo {

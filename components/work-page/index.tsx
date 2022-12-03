@@ -24,7 +24,7 @@ export default function WorkPage({ workPageItems }: IProps) {
                     />
                 </div>
                 <div className="p-10">
-                    <h2 className="mb-2 text-2xl font-light tracking-tight text-gray-900 dark:text-white">
+                    <h2 className="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
                         {workPageItem?.title}
                     </h2>
                     <h2 className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -37,7 +37,7 @@ export default function WorkPage({ workPageItems }: IProps) {
 
     return (
         <div className=" bg-slate-100 dark:bg-slate-800  pt-16 w-screen">
-            <div className="text-center pt-20 pb-10 text-5xl font-light">
+            <div className="text-center pt-20 pb-10 text-5xl ">
                 Work and Projects
             </div>
 

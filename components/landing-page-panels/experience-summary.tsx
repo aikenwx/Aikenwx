@@ -1,15 +1,17 @@
+import Image from "next/image";
 import React from "react";
+import StephanBruggermann from "../../public/images/stephan-bruggermann.jpg";
 
 export default function ExperienceSummary() {
     return (
         <div className=" bg-slate-100 dark:bg-gray-900">
-            <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center">
-                <div className="flex p-10 sm-p-5 pt-20 basis-full">
+            <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center ">
+                <div className="flex p-10 sm-p-5 pt-20 lg:basis-1/2 basis-full">
                     <div>
-                        <div className="text-5xl font-light sm:text-6xl mb-10">
+                        <div className="text-5xl  sm:text-6xl mb-10">
                             My Journey So Far
                         </div>
-                        <p className="max-w-3xl text-xl">
+                        <p className="max-w-3xl text-xl leading-loose">
                             {`I am currently studying as a Computer Science
                             student at the National University of Singapore. If
                             there's one thing I've learnt from my time here as a
@@ -25,7 +27,7 @@ export default function ExperienceSummary() {
                         </p>
                         <br></br>
 
-                        <p className="max-w-3xl text-xl">
+                        <p className="max-w-3xl text-xl leading-loose">
                             {`Within school, I have also had the opportunity to
                             involve myself in various software projects and
                             courses. I have worked on web applications, Java
@@ -34,7 +36,7 @@ export default function ExperienceSummary() {
                             prototyping.`}
                         </p>
                         <br></br>
-                        <p className="max-w-3xl text-xl">
+                        <p className="max-w-3xl text-xl leading-loose">
                             {`
                             However, it was not until my internship at WorkClass
                             as a full-stack developer did I truly see my next
@@ -53,6 +55,27 @@ export default function ExperienceSummary() {
                         </p>
                         <p className="max-w-3xl text-xl"></p>
                         <p className="max-w-3xl text-xl">{""}</p>
+                    </div>
+                </div>
+                <div className="basis-full lg:basis-1/2 flex justify-center mb-10">
+                    <div className="w-full max-w-sm bg-white border border-gray-200  shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div className="flex justify-end px-4 pt-4"></div>
+                        <div className="flex flex-col items-center pb-10">
+                            <Image
+                                className="w-24 h-24 mb-3 rounded-full shadow-lg"
+                                src={StephanBruggermann}
+                                alt="Stephan Brüggemann"
+                            />
+                            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                                Stephan Brüggemann
+                            </h5>
+                            <span className="text-sm text-gray-500 dark:text-gray-400">
+                                WorkClass Co-founder | ML | PhD
+                            </span>
+                            <p className="p-10 text-xl italic font-semibold text-left text-gray-900 dark:text-white">
+                                {`"Aiken was an excellent developer who was able to quickly pick up new technologies and apply them to our website. He was also able to work independently and was able to deliver results on time. He had an outstanding attitude towards his work and was a pleasure to work with. I would recommend him to any company."`}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function WorkPageSlugTemplate({ workSlugPageItem }: IProps) {
                 />
                 <div className="flex justify-center mt-20">
                     <div style={{ maxWidth: 1000 }}>
-                        <h1 className="pb-2 text-4xl font-light">
+                        <h1 className="pb-2 text-4xl">
                             {workSlugPageItem.title}
                         </h1>
                         <h2 className="pb-4 font-normal text-2xl text-gray-700 dark:text-gray-400">
