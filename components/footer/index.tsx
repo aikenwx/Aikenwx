@@ -41,7 +41,10 @@ export default function Footer() {
 
                         <div className="flex md:basis-1/2 basis-full flex-wrap space-y-2">
                             {NAV_MENU_ITEMS.map((navMenuItem) => (
-                                <span className="basis-full">
+                                <span
+                                    className="basis-full"
+                                    key={navMenuItem.value}
+                                >
                                     <Link href={navMenuItem.path}>
                                         {navMenuItem.value}
                                     </Link>
