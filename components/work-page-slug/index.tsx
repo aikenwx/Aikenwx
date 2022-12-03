@@ -13,17 +13,25 @@ export default function WorkPageSlugTemplate({ workSlugPageItem }: IProps) {
                     carousel_image_urls={workSlugPageItem.carousel_image_urls}
                     imageAlt={workSlugPageItem.title + " experiences"}
                 />
+                <div className="flex justify-center mt-20">
+                    <div style={{ maxWidth: 1000 }}>
+                        <h1 className="pb-2 text-4xl font-light">
+                            {workSlugPageItem.title}
+                        </h1>
+                        <h2 className="pb-4 font-normal text-2xl text-gray-700 dark:text-gray-400">
+                            {workSlugPageItem.work_role}
+                        </h2>
 
-                <h1 className="pb-2 text-4xl font-light">
-                    {workSlugPageItem.title}
-                </h1>
-                <h2 className="pb-4 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    {workSlugPageItem.work_role}
-                </h2>
-
-                {workSlugPageItem.paragraphs.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                ))}
+                        {workSlugPageItem.paragraphs.map((paragraph, index) => (
+                            <p
+                                className={"text-xl leading-loose mb-10"}
+                                key={index}
+                            >
+                                {paragraph}
+                            </p>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
