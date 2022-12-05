@@ -11,7 +11,7 @@ export default function WorkPage({ workPageItems }: IProps) {
     const card = (workPageItem: IWorkPageItem) => (
         <Link href={"work/" + workPageItem.slug} key={workPageItem.slug}>
             <div
-                className=" w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
+                className=" w-full bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
                 key={workPageItem.slug}
             >
                 <div className="bg-gray-100 pt-16 pb-16 flex items-center justify-center relative h-60">

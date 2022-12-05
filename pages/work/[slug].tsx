@@ -11,7 +11,12 @@ interface IProps {
 
 export default function WorkPageSlug({ workSlugPageItem }: IProps) {
     return (
-        <DefaultLayout>
+        <DefaultLayout
+            metaData={{
+                title: workSlugPageItem.meta_title,
+                description: workSlugPageItem.meta_description,
+            }}
+        >
             <WorkPageSlugTemplate workSlugPageItem={workSlugPageItem} />
         </DefaultLayout>
     );

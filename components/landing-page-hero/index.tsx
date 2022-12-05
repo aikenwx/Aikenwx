@@ -33,7 +33,7 @@ export default function LandingPageHero() {
                                     </div>
                                     <div className="flex flex-wrap pt-20 justify-center">
                                         <h2 className="basis-1/2 p-5 flex max-w-xs text-left">
-                                            Over 7 months of experience as a
+                                            Over 8 months of experience as a
                                             full stack developer building
                                             consumer-facing commercial products.
                                         </h2>

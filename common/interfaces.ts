@@ -17,4 +17,11 @@ export interface IWorkSlugPageItem {
     paragraphs: string[];
     logo_url: string;
     carousel_image_urls: string[];
+    meta_title: string;
+    meta_description: string;
+}
+
+export interface IMetaData {
+    title: string;
+    description: string;
 }
