@@ -20,6 +20,7 @@ export default function WorkPage({ workPageItems }: IProps) {
                         src={workPageItem.logo_url}
                         alt={workPageItem.title}
                         fill
+                        priority
                         objectFit="contain"
                     />
                 </div>
