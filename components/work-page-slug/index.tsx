@@ -22,14 +22,12 @@ export default function WorkPageSlugTemplate({ workSlugPageItem }: IProps) {
                             {workSlugPageItem.work_role}
                         </h2>
 
-                        {workSlugPageItem.paragraphs.map((paragraph, index) => (
-                            <p
-                                className={"text-xl leading-loose mb-10"}
-                                key={index}
-                            >
-                                {paragraph}
-                            </p>
-                        ))}
+                        <div
+                            className="text-xl leading-loose html-write-up"
+                            dangerouslySetInnerHTML={{
+                                __html: workSlugPageItem?.html_write_up,
+                            }}
+                        />
                     </div>
                 </div>
             </div>

@@ -36,3 +36,16 @@ a {
   }
   
 }
+
+.html-write-up a {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+}
+
+.html-write-up ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.html-write-up ol {
+  list-style-position: inside;
+}

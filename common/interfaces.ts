@@ -14,7 +14,7 @@ export interface IWorkPageItem {
 export interface IWorkSlugPageItem {
     title: string;
     work_role: string;
-    paragraphs: string[];
+    html_write_up: string;
     logo_url: string;
     carousel_image_urls: string[];
     meta_title: string;
