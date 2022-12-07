@@ -5,7 +5,7 @@ import PostgresqlIcon from "../../icons/PostgresqlIcon";
 
 export default function MyMotto() {
     return (
-        <div className=" bg-teal-100 dark:bg-teal-900">
+        <div className=" bg-teal-200 dark:bg-teal-900">
             <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center">
                 <div className="flex p-10 sm-p-5 pt-20 basis-full">
                     <div className="basis-full">
