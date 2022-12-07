@@ -5,8 +5,8 @@ import { NAV_MENU_ITEMS } from "../../common/constants";
 
 export default function Footer() {
     return (
-        <div className="bg-slate-50 dark:bg-zinc-900 flex flex-col  text-2xl leading-loose ">
-            <div className="w-full h-full bg-black bg-opacity-5 dark:bg-opacity-30 pb-20 pt-20">
+        <div className="bg-slate-100 dark:bg-zinc-900 flex flex-col  text-2xl leading-loose ">
+            <div className="w-full h-full bg-black bg-opacity-0 dark:bg-opacity-30 pb-20 pt-20">
                 <div className="xl:container xl:mx-auto h-full flex items-center">
                     <div className="basis-full">
                         <div className="flex p-10 flex-wrap max-[767px]:space-y-2 max-w-4x items-start">
