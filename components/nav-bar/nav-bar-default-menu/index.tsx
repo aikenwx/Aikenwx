@@ -14,7 +14,7 @@ const NavBarDefaultMenu: React.FC = () => {
                     <Link
                         key={menuItem.value}
                         href={menuItem.path}
-                        className="block pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 sm:hover:bg-transparent sm:border-0 sm:hover:text-blue-700 sm:p-0 dark:text-gray-400 sm:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent"
+                        className="block pr-4 pl-3 text-gray-700 rounded hover:bg-slate-50 sm:hover:bg-transparent sm:border-0 sm:hover:text-blue-700 sm:p-0 dark:text-gray-400 sm:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent"
                     >
                         {menuItem.value}
                     </Link>

@@ -13,7 +13,10 @@ const NavBar: React.FC = () => {
     };
 
     return (
-        <nav className="bg-white  dark:bg-gray-900 fixed right-0 left-0 z-10">
+        <nav
+            className="bg-slate-50  dark:bg-zinc-900 fixed right-0 left-0 z-10 border-slate-200 dark:border-zinc-700 "
+            style={{ borderBottomWidth: 1 }}
+        >
             <div className="flex flex-wrap justify-between items-center mx-auto px-4 py-3">
                 <Link href="/" className="flex items-center">
                     <span className="self-center text-xl whitespace-nowrap dark:text-white">
@@ -21,7 +24,7 @@ const NavBar: React.FC = () => {
                     </span>
                 </Link>
                 <button
-                    className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     onClick={handleMobileMenuClick}
                 >
                     <span className="sr-only">Open main menu</span>

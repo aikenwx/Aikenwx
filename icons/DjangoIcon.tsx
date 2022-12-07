@@ -3,7 +3,8 @@ import React from "react";
 export default function DjangoIcon() {
     return (
         <svg
-            fill="white"
+            className="fill-black dark:fill-white"
+            fill="currentColor"
             width="100px"
             height="100px"
             viewBox="0 0 24 24"

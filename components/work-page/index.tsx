@@ -11,10 +11,10 @@ export default function WorkPage({ workPageItems }: IProps) {
     const card = (workPageItem: IWorkPageItem) => (
         <Link href={"work/" + workPageItem.slug} key={workPageItem.slug}>
             <div
-                className=" w-full bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
+                className=" w-full bg-white border border-gray-200 shadow-md dark:bg-zinc-800 dark:border-zinc-700 overflow-hidden"
                 key={workPageItem.slug}
             >
-                <div className="bg-gray-100 pt-16 pb-16 flex items-center justify-center relative h-60">
+                <div className="bg-slate-50 pt-16 pb-16 flex items-center justify-center relative h-60">
                     <Image
                         className="sm:p-10 p-5"
                         src={workPageItem.logo_url}
@@ -37,7 +37,7 @@ export default function WorkPage({ workPageItems }: IProps) {
     );
 
     return (
-        <div className=" bg-slate-100 dark:bg-slate-800  pt-16 w-screen">
+        <div className=" bg-slate-50 dark:bg-zinc-900  pt-16 w-screen">
             <div className="text-center pt-20 pb-10 text-5xl ">
                 Work and Projects
             </div>

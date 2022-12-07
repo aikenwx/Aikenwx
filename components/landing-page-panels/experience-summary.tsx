@@ -4,7 +4,7 @@ import StephanBruggermann from "../../public/images/stephan-bruggermann.jpg";
 
 export default function ExperienceSummary() {
     return (
-        <div className=" bg-slate-100 dark:bg-gray-900">
+        <div className=" bg-slate-50 dark:bg-zinc-900">
             <div className="xl:container xl:mx-auto h-full flex flex-wrap items-center ">
                 <div className="flex p-10 sm-p-5 pt-20 lg:basis-1/2 basis-full">
                     <div>
@@ -58,7 +58,7 @@ export default function ExperienceSummary() {
                     </div>
                 </div>
                 <div className="basis-full lg:basis-1/2 flex justify-center mb-10">
-                    <div className="w-full max-w-sm bg-white border border-gray-200  shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div className="w-full max-w-sm bg-white border border-gray-200  shadow-md dark:bg-zinc-800 dark:border-zinc-700">
                         <div className="flex justify-end px-4 pt-4"></div>
                         <div className="flex flex-col items-center pb-10">
                             <Image

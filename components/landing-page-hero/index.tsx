@@ -5,7 +5,7 @@ import styloMilo from "../../public/images/stylo-milo.jpg";
 
 export default function LandingPageHero() {
     return (
-        <div className={` dark:bg-gray-800 bg-slate-100 flex w-screen pt-16 `}>
+        <div className={` dark:bg-zinc-800 bg-slate-100 flex w-screen pt-16 `}>
             <div className={`basis-full ${styles.bg_image}`}>
                 <div className="w-full dark:bg-black dark:bg-opacity-30 bg-white bg-opacity-30">
                     <div
