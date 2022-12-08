@@ -5,6 +5,9 @@ import React, { useEffect, useState } from "react";
 interface IProps {
     carousel_image_urls: string[];
     imageAlt: string;
+    uxFocus?: boolean;
+    objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down";
+    fill?: boolean;
 }
 
 /**
@@ -13,7 +16,13 @@ interface IProps {
  * Browsers like google chrome can also make use of CSS properties like visibility:hidden and display:none to prevent load of
  * the next and previous images that are not visible in viewport
  */
-export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
+export default function Carousel({
+    carousel_image_urls,
+    imageAlt,
+    uxFocus = false,
+    objectFit = "contain",
+    fill = false,
+}: IProps) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [translateDirection, setTranslateDirection] = useState("");
 
@@ -71,8 +80,15 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
     }
 
     return (
-        <div id="default-carousel" className="relative z-0">
-            <div className="relative h-56 overflow-hidden md:h-96">
+        <div
+            id="default-carousel"
+            className={`relative z-0 ${fill && "h-full"}`}
+        >
+            <div
+                className={`relative  overflow-hidden ${
+                    fill ? "h-full" : "md:h-96 h-56"
+                }`}
+            >
                 {[currentImageIndex, previousSlideIndex, nextSlideIndex].map(
                     (index) => (
                         <div
@@ -81,9 +97,9 @@ export default function Carousel({ carousel_image_urls, imageAlt }: IProps) {
                         >
                             <Image
                                 src={carousel_image_urls[index]}
-                                className="absolute block w-full object-contain"
-                                fill
-                                priority={index == 0}
+                                className={`absolute block w-full object-${objectFit}`}
+                                fill={true}
+                                priority={uxFocus ? true : false}
                                 alt={imageAlt}
                             />
                         </div>

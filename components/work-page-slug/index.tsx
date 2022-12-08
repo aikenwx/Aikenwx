@@ -10,6 +10,7 @@ export default function WorkPageSlugTemplate({ workSlugPageItem }: IProps) {
         <div className=" bg-slate-50 dark:bg-zinc-900  pt-16 w-screen">
             <div className="xl:container xl:mx-auto p-10">
                 <Carousel
+                    uxFocus={true}
                     carousel_image_urls={workSlugPageItem.carousel_image_urls}
                     imageAlt={workSlugPageItem.title + " experiences"}
                 />
