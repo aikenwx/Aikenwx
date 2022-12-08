@@ -18,7 +18,7 @@ export default function LandingPageHero() {
                             <div className="flex items-center flex-wrap text-center">
                                 <div className="flex justify-center items-center flex-col sm:p-10 p-5">
                                     <div className={` mr-2 text-2xl `}>
-                                        Hi I'm Aiken, a
+                                        {"Hi I'm Aiken, a"}
                                     </div>
                                     <h1 className={`${styles.logo} font-beon`}>
                                         Software Engineer
