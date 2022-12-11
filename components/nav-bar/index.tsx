@@ -32,7 +32,9 @@ const NavBar: React.FC = () => {
                 </button>
                 <NavBarDefaultMenu />
             </div>
-            {isMobileMenuVisible && <NavBarMobileMenu />}
+            {isMobileMenuVisible && (
+                <NavBarMobileMenu setIsMobileVisible={setIsMobileMenuVisible} />
+            )}
         </nav>
     );
 };
