@@ -153,6 +153,7 @@ export default function Carousel({
             <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
                 {imageItems.map((_, index) => (
                     <button
+                        key={index}
                         type="button"
                         onClick={() => handleSliderButtonClick(index)}
                         className={getClassForSliderButton(index)}
