@@ -9,11 +9,7 @@ export default function WorkPageSlugTemplate({ workSlugPageItem }: IProps) {
     return (
         <div className=" bg-slate-50 dark:bg-zinc-900  pt-16 w-screen">
             <div className="xl:container xl:mx-auto p-10">
-                <Carousel
-                    uxFocus={true}
-                    carousel_image_urls={workSlugPageItem.carousel_image_urls}
-                    imageAlt={workSlugPageItem.title + " experiences"}
-                />
+                <Carousel uxFocus={true} imageItems={workSlugPageItem.images} />
                 <div className="flex justify-center mt-20">
                     <div style={{ maxWidth: 1000 }}>
                         <h1 className="pb-2 text-4xl">

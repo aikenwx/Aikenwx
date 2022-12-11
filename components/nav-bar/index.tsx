@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
 
     return (
         <nav
-            className="bg-slate-50  dark:bg-zinc-900 fixed right-0 left-0 z-10 border-slate-200 dark:border-zinc-800 "
+            className="bg-slate-50  dark:bg-zinc-900 fixed right-0 left-0 z-20 border-slate-200 dark:border-zinc-800 "
             style={{ borderBottomWidth: 1 }}
         >
             <div className="flex flex-wrap justify-between items-center mx-auto px-4 py-3">

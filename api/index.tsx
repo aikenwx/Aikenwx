@@ -1,4 +1,8 @@
-import { IWorkPageItem, IWorkSlugPageItem } from "../common/interfaces";
+import {
+    IImageItem,
+    IWorkPageItem,
+    IWorkSlugPageItem,
+} from "../common/interfaces";
 
 export const baseUrl =
     process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:8000";
@@ -18,5 +22,13 @@ export const getWorkSlugPageData = async (slug: string) => {
 export const getAllWorkSlugs = async () => {
     const res = await fetch(`${baseUrl}/all-work-slugs`, { method: "GET" });
     const data: { slug: string }[] = await res.json();
+    return data;
+};
+
+export const getLandingPageCarouselImages = async () => {
+    const res = await fetch(`${baseUrl}/landing-page-carousel`, {
+        method: "GET",
+    });
+    const data: IImageItem[] = await res.json();
     return data;
 };

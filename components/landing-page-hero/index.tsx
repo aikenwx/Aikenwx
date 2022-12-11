@@ -36,7 +36,7 @@ export default function LandingPageHero() {
                                              focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-4 text-center mr-2 mb-2"
                                         >
                                             <Link
-                                                className="text-3xl"
+                                                className=" text-2xl"
                                                 href={"/work"}
                                             >
                                                 View My Work

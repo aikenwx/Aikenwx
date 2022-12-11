@@ -16,12 +16,27 @@ export interface IWorkSlugPageItem {
     work_role: string;
     html_write_up: string;
     logo_url: string;
-    carousel_image_urls: string[];
+    images: IImageItem[];
     meta_title: string;
     meta_description: string;
+}
+
+export interface IImageItem {
+    image_url: string;
+    image_alt: string;
+    overlay?: React.ReactNode;
+    title?: string;
+    slug?: string;
+    overlay_text?: string;
 }
 
 export interface IMetaData {
     title: string;
     description: string;
+}
+
+export interface ICarouselImageProps {
+    image_url: string;
+    image_alt: string;
+    overlay?: React.ReactNode;
 }
