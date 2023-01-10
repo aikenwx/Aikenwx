@@ -32,7 +32,7 @@ export default function Footer() {
                                 <span className="basis-full">
                                     <Link
                                         href={
-                                            "/resumes/Aiken_Wong_Xiheng_Resume_November_2022.pdf"
+                                            "/resumes/Aiken_Wong_Xiheng_Resume_January_2023.pdf"
                                         }
                                         target="_blank"
                                     >
